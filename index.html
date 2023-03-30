@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    video {
+      width: 240px;
+      height: 180px;
+    }
+  </style>
+</head>
+<body>
+  <video id="mediaVideo" autoplay muted playsinline></video>
+  <video src="" id="recordVideo"></video>
+
+  <button id="record-btn">record</button>
+  <button id="stop-btn">stop</button>
+  <button id="play-btn">play</button>
+  <button id="download-btn">download video</button>
+  <button id="base64-btn">get Img</button>
+  <button id="close">close</button>
+
+  <div style="display: none;">
+    <canvas id="canvas" width="240" height="180"></canvas>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+  
+</body>
+</html>
