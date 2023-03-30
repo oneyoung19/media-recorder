@@ -199,7 +199,7 @@ class Media {
   }
 
   /* 拍照 */
-  takePhoto ({ canvas = document.createElement('canvas'), filename = 'photo.png', ratio = 3 }) {
+  takePhoto ({ canvas = document.createElement('canvas'), filename = 'photo.png', ratio = 3 } = {}) {
     if (!this.mediaVideo) {
       return
     }
