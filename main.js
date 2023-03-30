@@ -18,5 +18,7 @@ recordButton.addEventListener('click', media.startVideo.bind(media))
 stopButton.addEventListener('click', media.stopVideo.bind(media))
 playButton.addEventListener('click', media.playVideo.bind(media))
 downloadButton.addEventListener('click', media.downloadVideo.bind(media))
-imgButton.addEventListener('click', media.takePhoto.bind(media))
+imgButton.addEventListener('click', () => {
+  console.log(media.takePhoto())
+})
 closeButton.addEventListener('click', media.close.bind(media))
